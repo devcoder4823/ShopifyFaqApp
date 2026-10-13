@@ -1,0 +1,57 @@
+.product-faqs {
+  width: 100%;
+  color: inherit;
+}
+
+.product-faqs__heading {
+  margin: 0 0 1rem;
+  color: inherit;
+  font: inherit;
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.product-faqs__items {
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.product-faqs__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.product-faqs__question {
+  position: relative;
+  display: list-item;
+  padding: 1rem 2.5rem 1rem 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  line-height: 1.45;
+  list-style-position: inside;
+}
+
+.product-faqs__question:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.product-faqs__question::marker {
+  color: currentColor;
+}
+
+.product-faqs__answer {
+  padding: 0 0 1rem;
+  color: inherit;
+  line-height: 1.65;
+  opacity: 0.85;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 749px) {
+  .product-faqs__question {
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
+}

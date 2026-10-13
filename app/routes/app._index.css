@@ -1,0 +1,77 @@
+.pageIntro { color: #616a72; margin: -0.75rem 0 1rem; }
+.layout { display: grid; grid-template-columns: minmax(15.5rem, 0.9fr) minmax(16.5rem, 1.1fr); gap: 0.8rem; align-items: start; }
+.productPanel, .faqPanel { min-width: 0; border: 1px solid #e3e5e7; border-radius: 0.75rem; background: #fff; overflow: hidden; }
+.productPanel { padding: 1rem; }
+.faqPanel { padding: 1.25rem; min-height: 24rem; }
+.searchForm { display: grid; gap: 0.45rem; color: #303840; font-size: 0.875rem; font-weight: 600; }
+.searchControls { display: flex; gap: 0.5rem; }
+.searchControls input, .field input, .field textarea { box-sizing: border-box; width: 100%; border: 1px solid #8c9196; border-radius: 0.5rem; background: #fff; padding: 0.65rem 0.75rem; color: #202223; font: inherit; }
+.searchControls input:focus, .field input:focus, .field textarea:focus { outline: 2px solid #2c6ecb; outline-offset: 1px; }
+.primaryButton, .secondaryButton, .dangerButton { border: 0; border-radius: 0.5rem; padding: 0.65rem 1rem; min-height: 2.5rem; font: inherit; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.primaryButton { color: #fff; background: #303b44; }
+.primaryButton:hover { background: #1f292f; }
+.secondaryButton { color: #303840; background: #f1f2f3; }
+.dangerButton { color: #fff; background: #c5280c; }
+.primaryButton:disabled, .secondaryButton:disabled, .dangerButton:disabled { opacity: 0.58; cursor: wait; }
+.productList { display: grid; margin-top: 1rem; }
+.productCard { display: flex; align-items: center; gap: 0.7rem; padding: 0.7rem 0.15rem; border-top: 1px solid #eee; color: inherit; text-decoration: none; }
+.productCard:hover { background: #f8f9fa; }
+.productImage, .productImagePlaceholder { width: 2.8rem; height: 2.8rem; flex: 0 0 2.8rem; border-radius: 0.45rem; object-fit: cover; background: #f1f2f3; }
+.productImagePlaceholder { display: grid; place-items: center; color: #7a838a; font-size: 1.4rem; }
+.productInfo { min-width: 0; flex: 1; display: grid; gap: 0.2rem; }
+.productInfo strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.9rem; }
+.productInfo > span { color: #687078; font-size: 0.8rem; }
+.manage { color: #315b85; font-size: 0.79rem; white-space: nowrap; }
+.emptyProducts, .emptyFaqs { display: grid; place-items: center; gap: 0.4rem; padding: 2rem 1rem; text-align: center; color: #606970; }
+.emptyProducts strong, .emptyFaqs strong { color: #303840; }
+.emptyIcon { color: #899199; font-size: 2rem; }
+.moreLink { display: block; padding: 0.8rem 0 0.1rem; color: #315b85; text-align: center; font-size: 0.875rem; }
+.welcome { display: grid; justify-items: start; gap: 0.5rem; max-width: 30rem; padding: 1rem 0.5rem; }
+.welcomeIcon { display: grid; place-items: center; width: 2.5rem; height: 2.5rem; border-radius: 0.7rem; color: #315b85; background: #eaf2fa; font-size: 1.4rem; }
+.welcome h2, .selectedProduct h2, .faqHeading h2 { margin: 0; color: #202830; font-size: 1.15rem; }
+.welcome p, .setupSteps p { margin: 0.2rem 0; color: #606970; line-height: 1.5; }
+.welcome ol, .setupSteps ol { display: grid; gap: 0.45rem; padding-left: 1.3rem; color: #434c54; line-height: 1.5; }
+.selectedProduct { display: flex; gap: 0.8rem; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid #e8eaec; }
+.selectedProduct img { width: 3.5rem; height: 3.5rem; border-radius: 0.55rem; object-fit: cover; }
+.selectedProduct p { margin: 0.25rem 0 0; color: #687078; font-size: 0.88rem; }
+.faqHeading { padding: 1rem 0 0.6rem; }
+.faqList { display: grid; gap: 0.75rem; }
+.faqCard, .editor { border: 1px solid #e3e5e7; border-radius: 0.65rem; padding: 0.9rem; }
+.faqCopy h3 { margin: 0 0 0.45rem; color: #28323a; font-size: 0.97rem; }
+.faqCopy p { margin: 0; color: #5e6870; line-height: 1.55; white-space: pre-wrap; overflow-wrap: anywhere; }
+.faqActions, .formActions { display: flex; gap: 0.8rem; justify-content: flex-end; margin-top: 0.8rem; }
+.textButton, .textButtonDanger { padding: 0.25rem; border: 0; background: transparent; color: #315b85; font: inherit; cursor: pointer; }
+.textButtonDanger { color: #b42318; }
+.editor { display: grid; gap: 0.9rem; margin-top: 0.6rem; background: #fbfcfc; }
+.field { display: grid; gap: 0.35rem; color: #303840; font-size: 0.9rem; font-weight: 600; }
+.field small { color: #687078; font-size: 0.78rem; font-weight: 400; }
+.field textarea { resize: vertical; line-height: 1.5; }
+.required { margin-left: 0.4rem; color: #687078; font-size: 0.72rem; font-weight: 400; }
+.confirmDelete { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem; padding-top: 0.75rem; border-top: 1px solid #eee; }
+.confirmDelete > div { display: grid; flex: 1 1 100%; gap: 0.2rem; }
+.confirmDelete > div strong { color: #8a1c10; }
+.confirmDelete > div span { color: #606970; font-size: 0.85rem; }
+.confirmDelete form { margin-left: auto; }
+.addButton { margin-top: 1rem; padding: 0.65rem 0.85rem; border: 1px dashed #90979d; border-radius: 0.55rem; color: #315b85; background: #fff; font: inherit; font-weight: 600; cursor: pointer; }
+.faqDescriptionToggle { display: flex; align-items: flex-start; gap: 0.65rem; padding: 0.8rem; border: 1px solid #e3e5e7; border-radius: 0.55rem; background: #fff; cursor: pointer; }
+.faqDescriptionToggle input { appearance: none; position: relative; flex: 0 0 auto; width: 2.7rem; height: 1.5rem; margin: 0.05rem 0 0; border: 0; border-radius: 999px; background: #8c9196; cursor: pointer; transition: background-color 150ms ease; }
+.faqDescriptionToggle input::after { content: ""; position: absolute; top: 0.15rem; left: 0.15rem; width: 1.2rem; height: 1.2rem; border-radius: 50%; background: #fff; box-shadow: 0 1px 2px #0003; transition: transform 150ms ease; }
+.faqDescriptionToggle input:checked { background: #008060; }
+.faqDescriptionToggle input:checked::after { transform: translateX(1.2rem); }
+.faqDescriptionToggle input:focus-visible { outline: 2px solid #2c6ecb; outline-offset: 2px; }
+.faqDescriptionToggle > span { display: grid; gap: 0.25rem; }
+.faqDescriptionToggle strong { color: #303840; font-size: 0.88rem; }
+.faqDescriptionToggle small { color: #687078; font-size: 0.78rem; font-weight: 400; line-height: 1.4; }
+.error, .bannerError { padding: 0.7rem 0.85rem; border-radius: 0.45rem; color: #8a1c10; background: #fff0ee; }
+.error { margin: 0; font-size: 0.88rem; }
+.bannerError { margin: 0 0 1rem; }
+.setupSteps { color: #424b53; font-size: 0.88rem; line-height: 1.45; }
+.themeLink { display: inline-block; margin: 0.25rem 0 0.5rem; color: #315b85; font-weight: 600; }
+.setupNote { padding-top: 0.6rem; border-top: 1px solid #e8eaec; font-size: 0.82rem; }
+
+/* Keep the selected product editor beside the list on desktop, and stack both
+   panels only when the embedded app itself becomes phone-sized. */
+@media (max-width: 850px) {
+  .layout { grid-template-columns: 1fr; }
+  .faqPanel { min-height: auto; }
+}
